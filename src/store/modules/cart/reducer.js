@@ -15,7 +15,7 @@ export default function cart(state = [], action) {
           });
         }
       });
-    case '@cart/REMOVE ':
+    case '@cart/REMOVE':
       return produce(state, draft => {
         const productIndex = draft.findIndex(p => p.id === action.id);
         if (productIndex >= 0) {
